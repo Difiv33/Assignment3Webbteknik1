@@ -1,0 +1,49 @@
+#nav {
+    align-items: center;
+    background-color: rgba(97, 96, 96, 0.801);
+    height: auto;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+
+#nav a:hover {
+    color: rgb(0, 0, 255);
+    text-decoration: underline;
+}
+
+.title {
+    margin: 0;
+    margin-left: 2rem;
+    justify-self: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: white;
+    margin-bottom: 1%;
+}
+
+h1 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 3px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xxx-large;
+    margin-left: 2%;
+    margin-top: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0 2rem 0 0;
+    list-style: none;
+    justify-content: center;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    white-space: nowrap;
+}
