@@ -1,24 +1,38 @@
-#nav {
-    align-items: center;
-    background-color: rgba(97, 96, 96, 0.801);
-    height: auto;
-    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+body {
+    margin: 0;
 }
 
-#nav a:hover {
-    color: rgb(0, 0, 255);
+/* Header and navigation styles */
+header {
+    background-color: rgba(97, 96, 96);
+}
+
+nav {
+    align-items: center;
+    background-color: rgba(97, 96, 96);
+    height: auto;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    padding-bottom: 1%;
+}
+
+nav a:hover {
+    color: rgb(197, 195, 195);
     text-decoration: underline;
+}
+
+nav a.active {
+    color: rgb(131, 165, 226);
 }
 
 .title {
     margin: 0;
-    margin-left: 2rem;
     justify-self: center;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: white;
-    margin-bottom: 1%;
+    background-color: rgba(97, 96, 96);
+    margin-bottom: 2%;
 }
 
 h1 {
@@ -26,7 +40,6 @@ h1 {
     text-shadow: -1px -1px 0 #000, 3px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: xxx-large;
-    margin-left: 2%;
     margin-top: auto;
 }
 
@@ -46,4 +59,45 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: xx-large;
     white-space: nowrap;
+}
+
+/* Main content styles */
+main {
+    align-content: center;
+}
+
+.mainBild {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+/* Footer styles */
+
+footer {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0;
+}
+
+#footerTitel {
+    text-align: center;
+    font-size: large;
+}
+
+.footerbrf {
+    background-color: rgb(97, 96, 96);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+#rapport {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#rapport:hover {
+    color: rgb(39, 4, 238);
 }
