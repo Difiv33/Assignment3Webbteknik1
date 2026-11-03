@@ -43,7 +43,8 @@ h1 {
     margin-top: auto;
 }
 
-.menu, .subMenu {
+.menu,
+.subMenu {
     display: flex;
     gap: 1rem;
     margin: 0;
@@ -67,7 +68,7 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: medium;
     white-space: nowrap;
-} 
+}
 
 /* Main content styles */
 main {
@@ -75,7 +76,7 @@ main {
     display: grid;
 }
 
-main>* {
+main.hero>* {
     grid-area: 1 / 1;
 }
 
@@ -100,7 +101,7 @@ main>* {
     color: white;
     font-size: 40px;
     text-shadow: -1px -1px 0 #000, 3px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    animation: fadeInLeft 4s ease-out;
+    animation: fadeInLeft 2s ease-out;
     place-self: start middle;
     margin-top: 3rem;
 }
@@ -117,6 +118,22 @@ main>* {
     color: rgb(147, 207, 241);
 }
 
+#mainNyinflyttad {
+    text-align: left;
+    max-width: 800px;
+    justify-self: center;
+}
+
+#mainNyinflyttad p {
+    margin-left: 2rem;
+}
+
+#mainTrivselregler,
+#mainStadgar {
+    max-width: 800px;
+    justify-self: center;
+    text-align: left;
+}
 
 /* Footer styles */
 
