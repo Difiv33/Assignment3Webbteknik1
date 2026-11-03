@@ -129,7 +129,8 @@ main.hero>* {
 }
 
 #mainTrivselregler,
-#mainStadgar {
+#mainStadgar,
+#mainGemen {
     max-width: 800px;
     justify-self: center;
     text-align: left;
@@ -141,6 +142,19 @@ main.hero>* {
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 15%;
+}
+
+.apartments {
+    max-width: 800px;
+    justify-self: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    border-radius: 15%;
+}
+
+.apartments:hover {
+    transform: scale(1.10);
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Footer styles */
