@@ -43,7 +43,7 @@ h1 {
     margin-top: auto;
 }
 
-.menu {
+.menu, .subMenu {
     display: flex;
     gap: 1rem;
     margin: 0;
@@ -61,55 +61,60 @@ h1 {
     white-space: nowrap;
 }
 
+.subMenu a {
+    color: white;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    white-space: nowrap;
+} 
+
 /* Main content styles */
 main {
-    align-content: center;
+    text-align: center;
+    display: grid;
+}
+
+main>* {
+    grid-area: 1 / 1;
 }
 
 .mainBild {
-    height: 100%;
     width: 100%;
     display: block;
-    position: relative;
 }
 
 @keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translate(-80%, -50%);
+        transform: translateX(-2rem);
     }
 
     to {
         opacity: 1;
-        transform: translateX(-50%, -50%);
+        transform: translateX(0);
     }
 }
 
 #mainTitel {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     text-shadow: -1px -1px 0 #000, 3px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     animation: fadeInLeft 4s ease-out;
-    text-align: center;
+    place-self: start middle;
+    margin-top: 3rem;
 }
 
 #mainText {
-    position: absolute;
-    text-align: center;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
     font-size: 30px;
     text-shadow: -1px -1px 0 #000, 3px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    place-self: center center;
+    margin-bottom: 3rem;
 }
 
 #mainText a {
-    color: rgb(42, 172, 247);
+    color: rgb(147, 207, 241);
 }
 
 
