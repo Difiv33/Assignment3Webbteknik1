@@ -43,6 +43,11 @@ h1 {
     margin-top: auto;
 }
 
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
 .menu,
 .subMenu {
     display: flex;
@@ -130,7 +135,7 @@ main.hero>* {
 
 #mainTrivselregler,
 #mainStadgar,
-#mainGemen {
+#mainGemen, #mainAkut {
     max-width: 800px;
     justify-self: center;
     text-align: left;
