@@ -171,11 +171,9 @@ form {
     display: flex;
     max-width: 500px;
     flex-direction: column;
-    margin-top: 1rem;
     margin: 0 auto;
     text-align: left;
     margin-bottom: 2rem;
-    grid-column: 1;
 }
 
 form textarea {
@@ -186,18 +184,23 @@ form textarea {
 
 #mainKontakt {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #kontaktForm {
     grid-column: 1;
+    justify-self: end;
+}
+
+#kontaktAdress {
+    grid-column: 2;
     justify-self: center;
+    align-content: top;
 }
 
 #karta {
-    grid-column: 2;
+    grid-column: 3;
     justify-self: start;
-    text-align: center;
 }
 
 #kartBild {
