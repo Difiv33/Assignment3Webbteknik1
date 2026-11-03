@@ -23,9 +23,38 @@
   </header>
 
   <!--The main content begins here-->
-  <main>
+  <main id="mainKontakt">
+    <div id="kontaktForm">
+      <h2>Kontakta oss</h2>
+      <h3>Använd nedan formulär för att kontakta oss.</h3>
+      <h4>Vi svarar ofta inom 24 timmar</h4>
+      <form>
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" required>
 
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
 
+        <label for="message">Meddelande:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label for="boende">Är du boende hos oss idag?</label>
+        <select id="boende" name="boende" required>
+          <option value="">Välj</option>
+          <option value="ja">Ja</option>
+          <option value="nej">Nej</option>
+        </select>
+
+        <button type="submit">Skicka</button>
+      </form>
+    </div>
+    <div id="karta">
+      <h2>Vår adress</h2>
+      <p>Brf Rymdsonden<br>
+        Rymdvägen 42<br>
+        123 45 Rymdstaden</p>
+      <img id="kartBild" src="img/map-pin.jpg" alt="Karta över Brf Rymdsondens läge">
+    </div>'
   </main>
 
   <footer>
