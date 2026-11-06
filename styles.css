@@ -1,8 +1,3 @@
-body {
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
 /* Header and navigation styles */
 header {
     background-color: rgba(97, 96, 96);
@@ -84,6 +79,7 @@ h3 {
 main {
     text-align: center;
     display: grid;
+    flex-grow: 1;
 }
 
 main.hero>* {
@@ -92,7 +88,9 @@ main.hero>* {
 
 .mainBild {
     width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
 }
 
 @keyframes fadeInLeft {
@@ -122,6 +120,14 @@ main.hero>* {
     text-shadow: -1px -1px 0 #000, 3px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     place-self: center center;
     margin-bottom: 3rem;
+}
+
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 img {
